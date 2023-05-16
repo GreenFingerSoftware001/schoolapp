@@ -1,0 +1,84 @@
+#left_column {
+    width:20%;
+    height:100vh;
+    background:#fdfefe;
+    border-right: solid;
+    border-width:1px;
+    border-color:#d5dbdb;
+}
+
+#accounts_manager{
+  width:24%;
+  height:70%;
+  background:#aeb6bf;
+  position:absolute;
+  top:75px;
+  right:70px;
+  border-radius:20px;
+  border-left:solid;
+  border-width:1px;
+  border-color: #ccd1d1;
+  z-index:1;
+  visibility: hidden;
+}
+
+#account_data{
+   height:35%;
+   background: #d5dbdb;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+#picture_account{
+   width:7em;
+   height:7em;
+   background:orangered;
+   border-radius:20em;
+}
+
+#accounts{
+ height:64.6%;
+ background-color: #f7f9f9;
+ display:flex;
+ flex-direction: column;
+}
+
+.manager{
+   padding:14px;
+   background:#f7f9f9;  
+}
+
+.manager:hover{
+   background:#bfc9ca;
+}
+
+
+#menu_feature {
+    height:80%;
+    width:100%;
+    background:#d9dee2;
+    display:grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.parts .hyperlink{
+    padding:16px 30px;
+    background: #f2f3f4;
+    display:block;
+    margin-bottom: 0px;
+   
+}
+
+span{
+    margin-right: 10px;
+    transform:translateY(6px);
+}
+
+.parts .hyperlink:hover{
+     background: #e5e7e9;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}
+

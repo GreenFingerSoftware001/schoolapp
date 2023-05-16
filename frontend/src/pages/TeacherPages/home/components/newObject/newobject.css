@@ -1,0 +1,28 @@
+#buttons_holder {
+    height:fit-content;
+    background:blue;
+    display:flex;
+    flex-direction: column;
+}
+
+.homeworktools {
+  padding:15px 20px;
+  background: #d5dbdb;
+  display: block;
+  border:none;
+  outline: none;
+
+}
+
+#button1:hover{
+    background: #5499c7;
+}
+
+#button2:hover {
+  background: #52be80;
+}
+
+
+
+
+

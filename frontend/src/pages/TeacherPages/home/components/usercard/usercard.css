@@ -1,0 +1,33 @@
+#usercard {
+  height:35%;
+  background: #f2f3f4;
+  text-align: center;
+}
+
+#backfont {
+  height:35%;
+  background: #99a3a4;
+}
+
+#UserImage {
+  width:5em;
+  height:5em;
+  background:blue;
+  border-radius: 20em;
+  position:relative;
+  left:95px;
+  bottom:40px;
+}
+
+#Username {
+  position:relative;
+  bottom:35px;
+}
+
+#usertype {
+  position:relative;
+  bottom:30px;
+}
+
+
+

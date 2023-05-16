@@ -1,0 +1,94 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+#general_box{
+    height:auto;
+    background:cornflowerblue;
+}
+
+header{
+    height:4em;
+    background:#363434;
+    display:flex;
+    align-items: center;
+}
+
+#title{
+    margin-left: 30px;
+}
+
+#url_title{
+    text-decoration:none;
+    color: #fdfefe;
+    font-family: 'Bitter', serif;
+}
+
+#root_content{
+    height:auto;
+    background:red;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.tools{
+    height: 50%;
+    background:#aeb6bf;
+    transform: translateX(30px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#add_tool{
+    width:8em;
+    margin-right: 10px;
+}
+
+#add_tool:hover{
+    background: #2980b9;
+    color: #fbfcfc;
+}
+
+#search_tool{
+    width:30em;
+    margin-right:90px;
+}
+
+#modular_form {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    background: chocolate;
+}
+
+#seacrh_field{
+   width:80%;
+   padding:8px;
+}
+
+#searcher_button{
+    width:20%;
+}
+
+
+#delete_tool{
+    width:8em;
+}
+
+#delete_tool:hover{
+   background: #c0392b;
+   color: #fbfcfc;
+}
+
+
+#added_tag{
+    width:20%;
+    height:30%;
+    background:cornflowerblue;
+}

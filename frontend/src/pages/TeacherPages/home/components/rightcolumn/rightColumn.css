@@ -1,0 +1,13 @@
+.RightColumn {
+    height:32.5em;
+    width:20%;
+    background: #c1c1c1;
+    margin-top:10px;
+}
+
+.recomended_menu {
+    height:60%;
+    background:#5d6d7e;
+    display:grid;
+    grid-template-rows:30% 15% 15% 15% 15%;
+}

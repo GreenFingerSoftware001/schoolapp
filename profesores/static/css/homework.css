@@ -1,0 +1,153 @@
+*{
+ padding:0px;
+ margin:0px;
+ box-sizing: border-box;
+}
+
+#general_box {
+  height:auto;
+  display:grid;
+  grid-template-rows:15% 85%;
+}
+
+header {
+    height:5em;
+    background:#363434;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#title {
+    margin:50px;
+    color: #fdfefe;
+    font-family: 'Bitter', serif;
+}
+
+
+#picture{
+  background: orchid;
+  border-radius: 20em;
+  width:3.5em;
+  height:3.5em;
+  position:absolute;
+  right:40px;
+}
+
+#search_block {
+  width: 20%;
+  height:2.6em;
+  background:orange;
+  position:relative;
+  left:650px;
+}
+
+#search_form{
+  height:100%;
+  display:grid;
+  grid-template-columns:20% 80%;
+
+}
+
+#search_btn {
+  text-align: center;
+}
+
+#id_homework_title{
+  padding:8px;
+  border:collapse;
+}
+#root-content {
+    height:auto;
+    background-image:#fbfcfc ;
+    display:flex;
+    flex-direction:row;
+}
+
+#left_column {
+  width:20%;
+  height:100vh;
+  background:orange;
+  border-right: solid;
+  border-width:2px;
+  border-color:#ccd1d1;
+}
+
+#menu_feature{
+  height:100%;
+  width:100%;
+  background:#fbfcfc;
+  visibility:visible;
+  display:flex;
+  flex-direction: column;
+}
+
+.parts .hyperlink{
+  padding:30px 60px;
+  background: #f7f9f9;
+  display:block;
+  cursor:pointer;
+}
+
+
+.work .newcourse {
+  padding: 20px 40px;
+  background: skyblue;
+
+}
+
+.hyperlink {
+text-decoration: none;
+}
+
+span{
+  margin-right: 10px;
+  transform:translateY(6px);
+}
+
+.parts .hyperlink:hover{
+   background:#e5e7e9;
+}
+
+#central {
+  width:80%;
+  height:100vh;
+  background:orange;
+  float:left;
+}
+
+#folderholder {
+  width:100%;
+  height:10%;
+  background: #eaeded;
+  display:flex;
+  flex-direction:row;
+}
+.folders {
+  height:100%;
+  width:18em;
+  background: #ccd1d1;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+
+}
+
+.folders-name {
+   margin-left: 40px;
+}
+
+
+.folders:hover {
+   background: #b2babb;
+}
+
+#folder1, #folder2 {
+  margin-right:10px;
+}
+
+#content {
+  width:100%;
+  height:90%;
+  background: #fbfcfc;
+}

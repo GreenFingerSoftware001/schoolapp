@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'javascript/messageEffects.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/m_estudiantes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+<div id="general_box">
+    {% include 'base/header.html' %}
+    <div id="root_content">
+        <div id="left_column">
+            <button id="button1" onclick="Effect1()">Redactar</button>
+            <div id="first_feature">
+                <ul id="menu-tools">
+                   <li id="tool" class="tools">
+                      <p id="incoming" class="hyperlinks">Bandeja de Entrada</p>
+                   </li>
+                   <li id="tool2" class="tools">
+                      <p id="notwanted" class="hyperlinks">correos no deseados</p>
+                   </li>
+                   <li class="tools">
+                      <p id="deleted" class="hyperlinks">borradores</p>
+                   </li>
+                   <li class="tools">
+                      <p id="deleted-items" class="hyperlinks">elementos eliminados</p>
+                   </li>
+                   <li class="tools">
+                      <p id="files" class="hyperlinks">Archivos</p>
+                   </li>
+                   <li class="tools">
+                      <p id="notes" class="hyperlinks">Notas</p>
+                   </li>
+                   <li class="tools">
+                      <p id="talks" class="hyperlinks">Conversasiones</p>
+                   </li>
+                   <li class="tools">
+                      <p id="junk" class="hyperlinks">junk</p>
+                   </li>
+                   <li class="tools">
+                   <p class="hyperlinks">trash</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <div id="formcontainer">
+            <div id="block_content">
+                <form method="POST" id="message_form">
+                   {% csrf_token %}
+                   {{ form }}
+                   <input type="submit" name="sender" id="send_button" value="send">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

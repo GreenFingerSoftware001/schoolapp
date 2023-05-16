@@ -1,0 +1,48 @@
+#ToolPage {
+    width:100vw;
+    height:100vh;
+    background: #f2f3f4;
+}
+
+
+
+#BarLine #barMenu {
+    width:100vw;
+    height:3em;
+    background:blue;
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    grid-template-rows:100%;
+    column-gap:5px;
+    list-style: none;
+}
+
+.btnsBar {
+   padding:10px;
+   background:#c1c1c1;
+   text-align:center;  
+}
+
+#btnsText {
+    margin-top:20px;
+}
+
+
+.MenuTools {
+   display:none;
+   z-index:1;
+   margin-top:17px;
+   background:red; 
+   width:100%;
+}
+
+.Htools .HtoolsText {
+    background:purple;
+    padding:10px;
+    width:100%;
+    display:block;
+}
+
+.MenuTools:hover {
+   display:block;
+}

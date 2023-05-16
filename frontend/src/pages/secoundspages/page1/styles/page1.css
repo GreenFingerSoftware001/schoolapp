@@ -1,0 +1,42 @@
+.cardHolder {
+    height:fit-content;
+    position:relative;
+    top:80px;
+    display:flex;
+    flex-direction: column;
+}
+
+.section1 {
+  height:16em;
+  background: #f0b27a;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap:10px;
+  margin-bottom:10px;
+}
+
+.ProductCard {
+    background:palevioletred;
+}
+
+.ImgCard{
+    height:70%;
+    background:palegoldenrod;
+}
+
+.section2 {
+    height:16em;
+    background:orange;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap:10px;
+    margin-bottom:10px;
+}
+
+.section3 {
+    height:16em;
+    background:blue;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 10px;
+}

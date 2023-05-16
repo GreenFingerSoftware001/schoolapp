@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src="{% static 'javascript/Effects.js' %}" type="javascript/text"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="general_box"> 
+           
+    <form method="POST" id="loginform">
+            {% csrf_token %}
+         <div id="form-part1">
+            <h1 id="title">Tutor<span id="sec-title">Link</span></h1>
+            <h3> At TutorLink we believe in Education</h3>
+         </div>
+         {{ form }}
+         <input type="submit" name="login" id="loginButton" value="Login" onmouseover="ButtonEffects()">
+         <div id="remenber">
+         <a href="{% url 'reset' %}" id="passwordforgoted" class="log_parts">Forgot password?</a>
+         <p class="log_parts">No tienes un cuenta?<a href="{% url 'signup' %}" id="new_account">Registrate</a></p> 
+         </div>
+         <div id="social_container">
+            <a href="" class="sociallogin" id="id_google">google</a>
+            <a href="" class="sociallogin" id="id_facebook">facebook</a>
+         </div>
+    </form>
+
+    </div>
+    <footer>
+        <span>Made by:</span>
+        <span>Gustavo Barrios</span>
+    </footer>
+</body>
+</html>

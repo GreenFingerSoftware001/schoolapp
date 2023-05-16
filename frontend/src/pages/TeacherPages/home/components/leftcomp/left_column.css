@@ -1,0 +1,11 @@
+.leftColumn {
+    height:32.5em;
+    width:20%;
+    background: #d5dbdb;
+    border-style: solid;
+    border-width:1px;
+    border-color: #d5dbdb;
+    margin-top:10px;
+    overflow: scroll;
+}
+

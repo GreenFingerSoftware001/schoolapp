@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/explore.css' %}">
+    <title>Document</title>
+</head>
+<body>
+  <div id="general_box">
+    <header>
+      <h1 id="title">Educocity</h1>
+      <div id="picture"></div>
+      <div id="search_block">
+         <form method="POST" id="search_form">
+              {% csrf_token %}
+              <button id="search_btn">
+                <span class="material-symbols-outlined">search</span>
+               </button>
+               {{ form1.searchfield }}
+         </form>
+      </div>
+   </header>
+   <div id="secound_box">
+
+   </div>
+  </div>
+</body>
+</html>

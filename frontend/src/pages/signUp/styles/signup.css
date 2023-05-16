@@ -1,0 +1,8 @@
+.general_box{
+    height:100vh;
+    background:#eaeded;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}

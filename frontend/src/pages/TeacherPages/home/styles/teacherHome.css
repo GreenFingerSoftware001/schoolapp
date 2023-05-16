@@ -1,0 +1,7 @@
+.HomeContainer-t1 {
+    width:fit-content;
+    height:fit-content;
+    background: #f8f9f9;
+    display:flex;
+    flex-direction: column;
+}

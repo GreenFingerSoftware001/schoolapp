@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'javascript/proccessFile.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/perfil.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--otherfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+   <div id="general_box">
+     <header>
+        <h1 id="title">TutorLink</h1>
+        <div id="search_block">
+           <form method="POST" id="search_form">
+                {% csrf_token %}
+                <button id="search_btn">
+                  <span class="material-symbols-outlined">search</span>
+                 </button>
+                 {{ form1.searchfield }}
+           </form>
+        </div>
+        <div id="picture" onclick="effect1()"></div>
+     </header>
+     <div id="root_content">
+           <section id="left_column">
+               <ul id="menu_feature">
+                  <li class="parts">
+                     <a href="{% url  'estudiantes:students-home'%}" class="hyperlink"> <span class="material-symbols-sharp">home</span>Inicio</a>
+                  </li>
+                  <li class="parts">
+                     <a href="{% url 'estudiantes:messages' %}" class="hyperlink"> <span class="material-symbols-sharp">chat</span>messages</a>
+                  </li>
+                  <li class="parts">
+                     <a href="{% url 'estudiantes:desktop' %}" class="hyperlink"><span class="material-symbols-sharp">work</span>workshop</a>
+                  </li>
+                  <li class="parts">
+                     <a href="{% url 'estudiantes:desktop' %}" class="hyperlink"><span class="material-symbols-sharp">explore</span>Explore</a>
+                  </li>
+
+
+                  <li class="parts">
+                     <a href="{% url  'profesores:co-workers' %}" class="hyperlink"><span class="material-symbols-sharp">group</span>Friends</a>
+                  </li>
+                  <li class="parts">
+
+                     <p class="hyperlink"><span class="material-symbols-sharp">notifications</span>Notificaciones</p>
+                  </li>
+                  <li class="parts">
+                     <a href="{% url 'profesores:teacher_perfil' %}" class="hyperlink"><span class="material-symbols-sharp">person</span>Perfil</a>
+                  </li>
+                  <li class="parts" onclick="menu_hidden">
+                     <p class="hyperlink"> <span class="material-symbols-sharp">more_vert</span>Mas</a>
+                  </li>
+               </ul>
+            </section>
+            <main id="block_content">
+               {% if user.is_authenticated %}
+                  {% if not User_data.image_field %}
+                    <div id="image-card">
+                        <div id="image_btn">
+                             <img src="{% static 'images/notuser3.png' %}" alt="notuseratall" id="notuserbtn">
+                        </div>
+                        <div id="id_mssg">
+                           <h2 id="mssg1">Agrega una imagen tuya</h2>
+                           <p id="mssg2">Añade una foto para que tus amigos puedan identificarte fácilmente.</p>
+
+                        </div>
+                        <input type="button" value="Upload" id="load-btn">
+                    </div>
+                  {% else %}
+                    <div id="hiddencont">
+
+                    </div>
+                  {% endif %}
+                  <div id="personal_coment">
+                     <div id="user_content">
+                         {% if not User_data.image_field %}
+                              <div id="img-data">
+                                 <img src="{% static 'images/notuser3.png' %}" alt="notuser">
+                              </div>
+                         {% else %}
+                              <div id="img-data">
+                                  <p>image campeon</p>
+                              </div>
+                         {% endif %}
+                       <button id="new_post" id="public" onclick="newPost()">
+                             <span>Crea una publicacion...</span>
+                       </button>
+                     </div>
+                   <div id="uploadedTools">
+                       <ul id="upload-tools">
+                           <li class="files">
+                              <span class="material-symbols-outlined" id="icon1">upload_file</span>
+                           </li>
+                           <li class="files">
+                              <span class="material-symbols-outlined">image</span>
+                           </li>
+                           <li class="files">
+                              <span class="material-symbols-outlined">slideshow</span>
+                           </li>
+                           <li class="files">
+                              <span class="material-symbols-outlined">schedule</span>
+                           </li>
+                       </ul>
+                   </div>
+                </div>
+                {{ form2.non_field_errors }}
+                <div id="ads">
+                    <ul id="hidden-boxes">
+                       <li class="boxes">
+
+                       </li>
+                    </ul>
+                </div>
+                {% else %}
+                   <div id="adding-img">
+                      <p id="login-necessary">log in to enjoy our plattaform </p>
+                   </div>
+                {% endif %}
+            </main>
+            <section id="right_column">
+               <ul id="recomended_menu">
+                  <li id="anounce" class="reco">
+                     <p id="recomends"></p>Cursos Recomendados</p>
+                  </li>
+                  <li id="re2" class="reco">
+                     <p class="recomends">secound_option</p>
+                  </li>
+                  <li id="re3" class="reco">
+                     <p class="recomends">thrid_option</p>
+                  </li>
+                  <li id="re4" class="reco">
+                     <p class="recomends">four_option</p>
+                  </li>
+                  <li id="re5" class="reco">
+                     <p class="recomends">five_option</p>
+                  </li>
+               </ul>
+           </section>
+      <div id="publish">
+           <form action="" method="post" id="coment_form">
+                <div id="label-box">
+                    <h2 id="coment_title">Crear una publicacion:</h2>
+                    <span class="material-symbols-outlined" id="close_comment" onclick="closingTab()">close</span>
+                </div>
+                {% if user.is_authenticated %}
+                {% csrf_token %}
+                 <div id="form-part1">
+                     <div id="user-picture">
+
+                     </div>
+                     <div id="user-data">
+                         <p id="username-data">{{ user.username }}</p>
+                         <select name="user-type" id="type">
+                             <option value="option1">Public</option>
+                             <option value="option2">Friends</option>
+                         </select>
+                     </div>
+                 </div>
+                 {{ form2.content }}
+                 <div id="post-tools">
+                     <span class="material-symbols-outlined" id="icon-tool1">image</span>
+                     <span class="material-symbols-outlined" id="icon-tool2">video_library</span>
+                     <span class="material-symbols-outlined" id="icon-tool3">article</span>
+                     <span class="material-symbols-outlined"id="icon-tool4">schedule</span>
+                 </div>
+                 <div id="picture-part">
+
+                 </div>
+                 <div id="video-part">
+
+                 </div>
+                 <input type="submit" value="cargar" id="upload-coment">
+                 {% else %}
+                    <p id="not-usermssg">
+                       login to make a post
+                    </p>
+                  {% endif %}
+           </form>
+      </div>
+
+
+      <div id="accounts_manager">
+           <div id="account_data">
+               <div id="picture_account">
+
+               </div>
+               <h3>{{ user.username }}</h3>
+               <h3>{{user.email}}</h3>
+           </div>
+           <div id="accounts">
+               {% if user.is_authenticated %}
+                 <a href="#" class="manager">Log-out</a>
+                 {% else %}
+                 <a href="#" class="manager">Log-In</a>
+               {% endif %}
+               <a href="" id="change_account" class="manager">Cambiar cuenta</a>
+               <a href="" id="salir" class="manager">Salir de todas las cuentas</a>
+            </div>
+      </div>
+      <div id="more_block">
+         <ul id="settings">
+            <li class="configurations" id="conf">
+               <a href="{% url 'estudiantes:configurations' %}" class="set_configuration">Configuracion</a>
+            </li>
+            <li class="configurations" id="saved">
+               <a href="" class="set_configuration">Guardadas</a>
+            </li>
+            <li class="configurations" id="activity">
+               <a href="" class="set_configuration">Tu actividad</a>
+            </li>
+            <li class="configurations" id="problem">
+               <a href="" class="set_configuration">Informar de un problema</a>
+            </li>
+            <li class="configurations" id="changelook" onclick="Night()">
+              <p class="set_configuration">Cambiar Aspecto</p>
+            </li>
+         </ul>
+      </div>
+      <form method="POST" name="img-form" id="img-load">
+         <span class="material-symbols-sharp" id="close_img">close</span>
+           {% csrf_token %}
+           {{ ImageLoad }}
+      </form>
+
+   </div>
+</body>
+</html>

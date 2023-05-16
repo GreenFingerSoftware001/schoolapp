@@ -1,0 +1,49 @@
+header {
+    height:5em;
+    background:#363434;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#title {
+    margin:50px;
+    color: #fdfefe;
+    font-family: 'Bitter', serif;
+}
+
+
+#picture{
+  background: orchid;
+  border-radius: 20em;
+  width:3.5em;
+  height:3.5em;
+  position:absolute;
+  right:40px;
+}
+
+#search_block {
+  width: 20%;
+  height:2.6em;
+  background:orange;
+  position:relative;
+  left:650px;
+}
+
+#search_form{
+  height:100%;
+  display:grid;
+  grid-template-columns:20% 80%;
+
+}
+
+#search_btn {
+  text-align: center;
+}
+
+#search_field{
+  padding:8px;
+  border:collapse;
+}
+
+

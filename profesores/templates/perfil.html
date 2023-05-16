@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/tpublic.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+    <div id="general_box">
+        <header>
+            <h1 id="title"><a href="{% url 'profesores:teachers_home' %}" id="url_title">TutorLink</a></h1>
+            <div id="picture"></div>
+            <div id="search_block">
+               <form method="POST" id="search_form">
+                    {% csrf_token %}
+                    <button id="search_btn">
+                      <span class="material-symbols-outlined">search</span>
+                     </button>
+                     {{ form1.searchfield }}
+               </form>
+            </div>
+        </header>
+        <div id="root_content">
+            
+            <div id="data">
+                <div id="user_info">
+                    <div id="user-img">
+
+                    </div>
+                    <div id="user-data">
+                        <h3>Username Example</h3>
+                        <h3>User city</h3>
+                    </div>
+                    <div id="data-user">
+                        <input type="button" value="Follow">
+                        <input type="button" value="Message">
+                    </div>
+                </div>
+                <div id="user_content">
+                    <h1 id="title-course">Cursos:</h1>
+                    <ul id="horizontal_menu">
+                       <li class="h_parts"  id="homework">
+                          <p class="info" id="id_homework">Tareas</p>
+                       </li>
+                       <li class="h_parts" id="test">
+                          <p class="info" id="id_test">Examenes</p>
+                       </li>
+                       <li class="h_parts" id="notes">
+                          <p class="info" id="id_notes">Red-list</p>
+                       </li>
+                    </ul>
+                </div>
+                <div id="friends">
+                    <h2 id="friend">Amigos</h2>
+                </div>
+            </div>
+            <div id="user-metric">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

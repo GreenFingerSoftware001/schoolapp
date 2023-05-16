@@ -1,0 +1,16 @@
+.HomeStudentPage {
+  width:100vw;
+  background:blue;
+}
+
+.RSCONT {
+  width:100vw;
+  height:87vh;
+  display:grid;
+  grid-template-columns:20% 50% 20%;
+  column-gap:10px;
+  background:#f2f3f4;
+  justify-content:center;
+  position: relative;
+  top:80px;
+}

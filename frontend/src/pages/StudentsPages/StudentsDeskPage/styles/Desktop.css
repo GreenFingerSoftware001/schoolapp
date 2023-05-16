@@ -1,0 +1,23 @@
+.RootPartContainer {
+    width:100vw;
+    display:grid;
+    grid-template-columns: 20% 50% 20%;
+    column-gap:10px;
+    justify-content: center;
+    position:relative;
+    top:80px;
+}
+
+.LeftComponent {
+    background:palegreen;
+    height:20em;
+}
+
+
+.Centralcont {
+    background:orange;
+}
+
+.RightContainer {
+    background:skyblue;
+}

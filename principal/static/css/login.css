@@ -1,0 +1,102 @@
+*{
+ padding:0;
+ margin:0;
+ box-sizing: border-box;
+}
+
+#general_box{
+    height:100vh;
+    background: #e5e8e8;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#loginform {
+    width:27%;
+    height:88%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background: #f7f9f9;
+    backdrop-filter:blur(3px);
+    border-style:solid;
+    border-width:1px;
+    border-color:#d5dbdb;
+    position: relative;
+    top:20px;
+}
+
+#form-part1 {
+    width:70%;
+    height:fit-content;
+    margin:10px 0 20px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#social_container {
+    width:60%;
+    height:4em;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap:4px;
+    background:#363434;
+    margin:10px 0 10px;
+}
+
+#id_google {
+    padding:10px;
+    display:block;
+    text-align:center;
+    background-image: orange url("/static/imgs/googlelogo.png");
+}
+
+#id_facebook {
+    background:blue;
+    text-align: center;
+    display:block;
+}
+
+#title {
+    font-family: 'Bitter', serif;
+    font-size:50px;
+    color: #5d6d7e;
+}
+
+#sec-title {
+    color: #2980b9;
+}
+
+#id_username, #id_password {
+    width:90%;
+    height:3em;
+    padding:8px;
+    border:none;
+}
+
+#id_username {
+    margin-bottom:6px;
+}
+
+#loginButton {
+    width:80%;
+    height:2.5em;
+    margin-top: 10px;
+    background: #2980b9;
+    border:none;
+    font-size:18px;
+}
+
+#message {
+    width:30%;
+}
+
+footer{
+    height:4em;
+    background:#363434;
+}

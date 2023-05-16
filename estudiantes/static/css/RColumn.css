@@ -1,0 +1,23 @@
+#right_column{
+    width:20%;
+    background:#d5dbdb
+  }
+
+  
+  #sec_feature{
+    height:55%;
+    background:transparent;
+}
+
+#recomended_menu{
+    width:100%;
+    height:100%;
+    background:transparent;
+    display:grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 6px;
+}
+
+.recoments {
+  margin-left:20px;
+}

@@ -1,0 +1,207 @@
+*{
+ padding:0px;
+ margin:0px;
+ box-sizing: border-box;
+}
+
+#general_box{
+    height:fit-content;
+    display:grid;
+    flex-direction: row;
+    background: burlywood;
+}
+
+header {
+    height:5em;
+    background:#363434;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#title {
+    margin:50px;
+    color: #fdfefe;
+    font-family: 'Bitter', serif;
+}
+
+
+#picture{
+  background: orchid;
+  border-radius: 20em;
+  width:3.5em;
+  height:3.5em;
+  position:absolute;
+  right:40px;
+}
+
+#search_block {
+  width: 20%;
+  height:2.6em;
+  background:orange;
+  position:relative;
+  left:650px;
+}
+
+#search_form{
+  height:100%;
+  display:grid;
+  grid-template-columns:20% 80%;
+
+}
+
+#search_btn {
+  text-align: center;
+}
+
+#search_field{
+  padding:8px;
+  border:collapse;
+}
+
+
+#root_content{
+    height:auto;
+    background:crimson;
+    display:flex;
+    flex-direction: row;
+}
+
+#left_column {
+    width:20%;
+    height:100vh;
+    background:orange;
+    border-right: solid;
+    border-width:2px;
+    border-color:#ccd1d1;
+}
+
+#menu_feature{
+    height:100%;
+    width:100%;
+    background:#fbfcfc;
+    visibility:visible;
+    display:flex;
+    flex-direction: column;
+}
+
+.parts .hyperlink{
+    padding:30px 60px;
+    background: #f7f9f9;
+    display:block;
+    cursor:pointer;
+}
+
+.hyperlink {
+  text-decoration: none;
+}
+
+span{
+    margin-right: 10px;
+    transform:translateY(6px);
+}
+
+.parts .hyperlink:hover{
+     background:#e5e7e9;
+}
+
+ 
+
+#data{
+    width:80%;
+    height:100vh;
+    background:#f7f9f9;
+    position:absolute;
+    right:0px;
+    top:80px;
+}
+
+#user_block {
+    height:45%;
+    background:#fbfcfc;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    position: relative;
+    top:60px;
+}
+
+#user_info{
+    width:80%;
+    height:100%;
+    background: #e5e8e8;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    left:50px;
+}
+
+#username{
+    font-size: 40px;
+    position: relative;
+    bottom:40px;
+    left:20px;
+}
+
+#editlink{
+    padding:14px;
+    background: #2980b9;
+    position:relative;
+    left:270px;
+    bottom:80px;
+    text-decoration: none;
+    color: #17202a;
+}
+ 
+#data_info{
+    width:60%;
+    height:3em;
+    background:transparent;
+    position:relative;
+    bottom:50px;
+    left:30px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#fullname_data{
+    position:relative;
+    bottom:30px;
+    left:30px;
+}
+
+#friends_data{
+    transform:translateX(20px);
+}
+
+#course_data{
+    transform: translateX(90px);
+}
+
+#user_content {
+    height:3.1em;
+    background:#d5dbdb;
+    display:flex;
+    flex-direction: row;
+}
+
+#user_data{
+    width:100%;
+    height:100%;
+    background:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data_info{
+    width:10em;
+    height:100%;
+    background: cornflowerblue;
+    margin-right:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+

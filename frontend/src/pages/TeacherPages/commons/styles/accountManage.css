@@ -1,0 +1,86 @@
+.AccountManager {
+    width: 20em;
+    height:20em;
+    background:#ccc1c1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position:absolute;
+    right:80px;
+    top:50px;
+    border-radius:solid 1px #c1c1c1;
+    visibility: hidden;
+}
+
+.AccountData {
+    height: 60%;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    background: #fbfcfc;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid 1px #ccc1c1;
+}
+
+.UserPicture {
+    width: 7em;
+    height:7em;
+    border-radius: 50%;
+    background-color:orange;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.UserData {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AccountOptions {
+    height: 50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background: #f2f3f4;
+    justify-content: space-between;
+    align-items: center;
+    overflow:scroll;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manager {
+    font-size:1 rem;
+    display:block;
+    text-decoration: none;
+    padding: 10px;
+    width:100%;
+}
+
+.manager:hover {
+    background-color: #ccc;
+    color: #fbfcfc;
+}
+
+.manager:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.manager:focus {
+    outline: none;
+}
+
+.manager:visited {
+    color: #000;
+}

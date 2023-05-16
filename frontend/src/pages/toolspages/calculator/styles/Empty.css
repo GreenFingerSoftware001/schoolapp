@@ -1,0 +1,7 @@
+#EmptyPage {
+    width:40%;
+    height:60%;
+    background: #fdfefe;
+    border: 1px #c1c1c1 solid;
+    transform:translate(40px, 40px);
+}

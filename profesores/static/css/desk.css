@@ -1,0 +1,278 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+
+#general_box {
+    width:100vw;
+    height:100vh;
+    background:#c1c1c1;
+}
+
+header {
+    height:5em;
+    width:100vw;
+    background: #2c3e50;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom:solid;
+    border-width:1px;
+    border-color: #d5dbdb;
+}
+
+#title {
+    margin:50px;
+    padding:9px;
+    color:#f4f6f6;
+    font-family: 'Bitter', serif;
+}
+
+#picture{
+  background: orchid;
+  border-radius: 20em;
+  width:3.5em;
+  height:3.5em;
+  position:relative;
+  left:950px;
+  cursor: pointer;
+}
+
+#search_block {
+  width:13em;
+  height:2.6em;
+  background:orange;
+  position:relative;
+  left:20px;
+}
+
+#search_form{
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-columns:20% 80%;
+}
+
+#search_btn {
+  text-align: center;
+
+}
+
+#id_searchfield{
+  padding:8px;
+  border:collapse;
+}
+
+
+#root_container {
+    height:fit-content;
+    background: #fdfefe;
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    justify-content: center;
+}
+
+#left_column {
+   height:515px;
+   width:20%;
+   background:#e5e7e9;
+}
+
+#menu_feature {
+    height:50%;
+}
+
+.parts .hyperlink {
+    padding:10px;
+    background:transparent;
+    display:block;
+}
+
+.hyperlink:hover{
+    background:#2c3e50;
+}
+
+#new_file {
+    background:#7dcea0;
+
+}
+
+#central_content{
+    background:transparent;
+    height:fit-content;
+    width:50%;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#folderholder{
+   height:4em;
+   background:#e5e7e9;
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap:6px;
+}
+
+.folders {
+  display:flex;
+  align-items:center;
+  background:#d5dbdb;
+  padding-left:10px;
+}
+
+#right_column {
+    width:20%;
+    height:515px;
+    background: #e5e7e9;
+}
+
+#courses_container {
+    position: absolute;
+    right:335px;
+    top:90px;
+    width:20%;
+    height:85%;
+    background: #d5dbdb;
+    visibility: hidden;
+}
+
+#form_block {
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background:rgba( 28, 40, 51, 0.5 );
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#id_form1 {
+    width:50%;
+    height:70%;
+    background:#c1c1c1;
+}
+
+#modal_block {
+  width:100%;
+  height:100%;
+  background:rgba( 28, 40, 51, 0.5 );
+  position: absolute;
+  top:0px;
+  left:0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index:2;
+}
+
+#id_form2{
+    width: 50%;
+    height:80%;
+    background: #d5dbdb;
+    display:flex;
+    flex-direction: column;
+}
+
+#accounts_manager {
+    width:25%;
+    height:65%;
+    background: #fbfcfc;
+    position: absolute;
+    top:65px;
+    right:140px;
+    z-index:1;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    visibility: hidden;
+}
+
+#work_tools {
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    list-style:none;
+}
+
+.work .mssgtools{
+    padding:15px;
+    display:block;
+}
+
+#newlesson {
+  background:#2980b9;
+}
+
+#settings {
+    width:80%;
+    height:60px;
+}
+
+#accounts {
+   height:90px;
+   width:80%;
+   background:transparent;
+   display:flex;
+   flex-direction: column;
+}
+#picture_account {
+    width:6em;
+    height:6em;
+    background:orange;
+    border-radius:20em;
+    transform:translateX(70px);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#select_lesson{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:rgba( 28, 40, 51, 0.5 );
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    visibility: hidden;
+}
+
+#lessons_options {
+    width:45%;
+    height:40%;
+    background: #fbfcfc;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lessons {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#option1:hover {
+   background:#c1c1c1;
+}
+
+#option2:hover {
+    background:#c1c1c1;
+ }
+
+#closetag {
+    position:absolute;
+    right:300px;
+    top:130px;
+    padding:10px;
+    border-radius:20em;
+    background: #f4f6f6;
+}

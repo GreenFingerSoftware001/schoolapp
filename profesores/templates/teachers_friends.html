@@ -1,0 +1,24 @@
+{% extends 'base/base_friends.html' %}
+
+{% block friends %}
+<div id="root_content">
+        <div id="menu_options">
+            <div class="tools" id="search_tool">
+                <form method="POST" id="modular_form">
+                    <input type="search" name="searcher" id="seacrh_field" placeholder="Buscar">
+                    <input type="submit" name='bimiting' id="searcher_button" value="Buscar">
+                </form>
+            </div>
+            <div id="add_tool" class="tools">
+               <p>agregar</p>
+            </div>
+            
+            <div class="tools" id="delete_tool">
+                   <p>Borrar</p>
+            </div>
+        </div>
+        <div id="amigos">
+
+        </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/signup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/friends.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+  <div id="general_box">
+
+      <div id="signup_div">
+          <form method="POST" id="signup_form" enctype="multipart/form-data">
+            <h1 id="title">Tutor<span id="sec-title">Link</span></h1>
+              {% csrf_token %}
+              {{form.as_p}}
+              <input type="submit" name="signup" id="signup_button" value="Signup">
+              <p id="ourpolitic">Al registrarte, aceptas nuestras Condiciones, nuestra Política de privacidad y nuestra Política de cookies</p>
+          </form>
+      </div>
+  </div>
+  <footer>
+   <p>Made by:<span>Gustavo Barrios</span></p>
+  </footer>
+</body>
+</html>

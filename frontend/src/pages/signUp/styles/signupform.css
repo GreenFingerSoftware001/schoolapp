@@ -1,0 +1,92 @@
+.signupform {
+  width:24em;
+  height: 35em;
+  background: #fbfcfc;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  border:solid 1px #e5e8e8;
+  backdrop-filter:blur(10px);
+}
+
+.signupform {
+    box-shadow: 3px 8px 25px 0px rgba(161,161,161,0.75);
+    -webkit-box-shadow: 3px 8px 25px 0px rgba(161,161,161,0.75);
+    -moz-box-shadow: 3px 8px 25px 0px rgba(161,161,161,0.75);
+}
+
+.part {
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+.part1 {
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.mssg-box {
+    margin-top:20px;
+    margin-bottom:16px;
+}
+
+
+
+.name_field, .lastname_field {
+     height:3em;
+     width:84%;
+     padding:8px;
+}
+
+.name_field {
+    margin-bottom:5px;
+}
+
+.username_field, .username_data, .email_field, .psswd, .repeat_psswd {
+  width:84%;
+  height:3em;
+  margin-bottom:5px;
+  padding:8px;
+}
+
+label {
+    margin-left:20px;
+}
+.cbox1 {
+    margin-right:30px;
+}
+
+.part3 {
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.SubmitButton {
+    padding:14px;
+    width:18em;
+    height:fit-content;
+    font-size:18px;
+    transform:translateY(20px);
+    font-weight: bold;
+    background:#5499c7;
+    color:#2c3e50;
+    border:none;
+}
+
+.SubmitButton:hover {
+    background:#2471a3;
+    color: #fdfefe; 
+}

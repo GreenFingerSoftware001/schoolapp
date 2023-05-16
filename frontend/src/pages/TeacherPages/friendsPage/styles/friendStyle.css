@@ -1,0 +1,32 @@
+.RootCont{
+    width:100vw;
+    height:87vh;
+    position:absolute;
+    top:80px;
+    display: grid;
+    grid-template-columns:20% 80%;
+}
+
+.LeftComp{
+    background:#f7f9f9;
+    height:98%;
+}
+
+.menuComp {
+    height:60%;
+    background:#eaeded;
+    display:grid;
+    grid-template-rows:repeat(4, 1fr);
+    row-gap:10px;
+}
+
+.comps {
+    display:flex;
+   align-items:center;
+    background: #b2babb;
+
+}
+
+.mssgComp {
+    margin-left:20px;
+}
